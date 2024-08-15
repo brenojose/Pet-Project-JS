@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color:#5b4773;
+    color: #fcf2d2;
+}
+
+.introduction, body h2{
+    display: none;
+}
+.console {
+    width: 500px;
+    height: 500px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-top: 40px;
+    border-radius: 400px 400px 240px 240px;
+    border: 4px solid black;
+    gap: 60px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    margin-top: 100px;
+    border: 4px solid black;
+    background-color: #DCE6DB
+}
+
+.name {
+    margin-bottom: 90px;
+    color: black;
+    text-decoration: underline;
+}
+
+.screen .foodbar {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.pixel-art {
+    position: absolute;
+    margin-left: -30px;
+    width: 395px; 
+    height: 300px; 
+    background-image: url('images/animation/spritesheet.png');
+    background-repeat: no-repeat;
+    animation: play-sprite 1s steps(4) infinite;
+    transform: scale(0.3);
+}
+
+@keyframes play-sprite {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -1580px;
+    }
+}
+
+.sprite-animation {
+    width: 100px;
+    height: 100px;
+    background-image: url('path/to/your/spritesheet.png');
+    background-repeat: no-repeat;
+
+    
+}
+
+
+.panel {
+background-color: slategray;
+display:flex;
+justify-content: space-around;
+align-items: center;
+width: 300px;
+height: 80px;
+border-radius: 12px;
+border: 2px solid black;
+}
+
+.feed, .play, .sleeping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.feed img, .play img, .sleeping img {
+    width: 140%;
+}
+
+button {
+    background-color: #fcf2d2; 
+}
+
+.status-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 190px;
+    padding: 10px;
+}
+
+.bar {
+    width: 90%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: none;
+    width: 0%; /* Initial width */
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+body form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Welcome to my Pet Simulator!</h1>
+    <h2>Instructions:</h2>
+    <div id="start-screen">
+    <p>Please, select the name of your pet to start playing the pet simulator.</p>
+    <form id="pet-name-form">
+        <input type="text" id="pet-name" placeholder="Captain Sushi" required>
+        <button type="submit">Start</button>
+    </form>
+</div>
+    <div class="introduction">
+        <p> - Pay attention to the bars of hunger, sleep and happiness. Press the buttons according to the necessities of the pet! (Please don't kill my cat)</p>
+    </div>
+
+    <div class ="console">
+        <div class ="screen">
+            <div class="name"><p>name</p></div>
+            <div class="pixel-art"></div>
+            <div class="status-bars">
+                <div class="bar happiness">
+                    <div class="progress happiness-progress"></div>
+                </div>
+                <div class="bar hunger">
+                    <div class="progress hunger-progress"></div>
+                </div>
+                <div class="bar sleep">
+                    <div class="progress sleep-progress"></div>
+                </div>
+            </div>            
+        </div>
+        <div class ="panel">
+            <button class="feed" title="Food"><img src="images/food.png" alt="food"></button>
+            <button class="play" title="Play"><img src="images/play.png" alt="food"></button>
+            <button class="sleeping" title="Sleep"><img src="images/sleep.png" alt="food"></button>
+        </div>
+    </div>
+</body>
+</html>
